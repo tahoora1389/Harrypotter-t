@@ -91,6 +91,8 @@ body{
     display: block;
 }
 .home-page{
+    background-image: src('Hagwarts.jpg');
+    background-blend-mode: multiply;
     display: none;
     background-color: rgb(52, 24, 24);
     z-index: 1;
