@@ -16,5 +16,6 @@ closeenvelope.addEventListener("click" ,function(){
     letterpage.classList.add("hide");
     letterpage.style.display="none";
     homepage.classList.add("show");
+    music.play();
 
 });
