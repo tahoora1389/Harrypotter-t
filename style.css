@@ -5,6 +5,7 @@ body{
     overflow: hidden;
 }
 .letter-page{
+    background-color: #542B38;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -93,6 +94,12 @@ body{
     display: none;
     background-color: rgb(52, 24, 24);
     z-index: 1;
+    background: linear-gradient(
+        135deg,
+        #10182B,
+        #1B3445,
+        #38304F
+    );
 }
 .home-page, .letter-page{
     position: fixed;
