@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+SC:wght@300;400;500;600;700&family=Jomhuria&family=Lalezar&family=Oi&family=Parisienne&family=Pixelify+Sans:wght@400..700&family=Prata&family=Trade+Winds&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.letter-page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s;
+    z-index: 2;
+}
+.envelope{
+    width: 75%;
+    margin: auto;
+
+    position: relative;
+
+}
+.wax-seal{
+    position: absolute;
+    width: 15%;
+    height: 17%;
+    top: 61%;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: lalezar;
+    color: white;
+    font-size: 12px;
+}
+.envelope img{
+    width: 100%;
+    height: auto;
+}
+@media (min-width:992px) {
+    .envelope{
+        width: 50%;
+    }
+}
+.letter-page.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+.openned-letter{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s ease;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+@media(min-width:400px){
+    .openned-letter{
+        width: 500px;
+    }
+}
+
+.openned-letter.show{
+    display: block;
+    opacity: 1;
+}
+.close-envelope{
+    position: absolute;
+    width: 12%;
+    height: auto;
+    bottom: 150%;
+    border-radius: 50%;
+    right: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: lalezar;
+    color: white;
+    display: none;
+    font-size: 40px;
+}
+.envelope.show .close-envelope{
+    display: block;
+}
+.home-page{
+    display: none;
+    background-color: rgb(52, 24, 24);
+    z-index: 1;
+}
+.home-page, .letter-page{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    inset: 0;
+    box-sizing: border-box;
+}
+.home-page.show{
+    display: block;
+    opacity: 1;
+    transition: 1s;
+}
