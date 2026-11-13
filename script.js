@@ -3,7 +3,8 @@ const homepage= document.querySelector(".home-page");
 const waxSeal= document.querySelector(".wax-seal");
 const opennedletter= document.querySelector(".openned-letter");
 const envelope=document.querySelector(".envelope");
-const closeenvelope= document.querySelector(".close-envelope")
+const closeenvelope= document.querySelector(".close-envelope");
+const music=document.querySelector(".hb-music");
 
 waxSeal.addEventListener("click" ,function(){
     envelope.classList.add("show");
