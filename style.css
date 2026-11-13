@@ -98,7 +98,7 @@ body{
             rgba(27, 52, 69, 0.7),
             rgba(56, 48, 79, 0.7)
         ),
-        url("Hagwarts.jpg");
+        url("./Hagwarts.jpg");
 
     background-size: cover;
     background-position: center;
